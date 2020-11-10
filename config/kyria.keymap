@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping_term_ms = <175>;
+            tapping_term_ms = <1000>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -29,34 +29,34 @@
 
 		default_layer {
 			bindings = <
-	&none	&kp Q		&kp W		&kp E		&kp R		&kp T																&kp Y		&kp U		&kp I		&kp O		&kp P    		&none
-	&none	&hm LGUI A	&hm LALT S	&hm LCTL D	&hm LSFT F	&kp G																&kp H		&hm RSFT J	&hm RCTL K	&hm RALT L	&hm RGUI SCLN	&none
-	&none 	&kp Z		&kp X		&kp C		&kp V		&kp B		&none		&none			&none		&none			&kp N		&kp M		&kp CMMA	&kp DOT		&kp FSLH 		&none
-									&kp ESC		&kp LGUI	&lt NUM ESC &lt NAV SPC &lt SYM TAB		&lt SYM RET	&lt NUM BKSP	&lt NAV DEL	&kp TAB		&kp ESC
+	&none	&kp Q		&kp W			&kp E			&kp R			&kp T																	&kp Y			&kp U			&kp I			&kp O			&kp P    		&none
+	&none	&hm LGUI A	&hm LALT S		&hm LCTL D		&hm LSFT F		&kp G																	&kp H			&hm RSFT J		&hm RCTL K		&hm RALT L		&hm RGUI SCLN	&none
+	&none 	&kp Z		&kp X			&kp C			&kp V			&kp B		&none			&none			&none		&none			&kp N			&kp M			&kp CMMA		&kp DOT			&kp FSLH 		&none
+										&kp ESC			&kp LGUI		&lt NUM ESC &lt NAV SPC 	&lt SYM TAB		&lt SYM RET	&lt NAV SPC		&lt NUM BKSP	&kp DEL			&kp ESC
 			>;
 		};
 		nav_layer {
 			bindings = <
-	&none	&none		&kp HOME		&kp UARW		&kp END			&kp PGUP															&kp PGUP	&kp HOME		&kp UARW		&kp END			&none	&none
-	&none	&none		&hm LALT LARW	&hm LCTL DARW	&hm LSFT RARW	&kp PGDN															&kp PGDN	&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&none	&none
-	&none 	&none		&none			&none			&none			&none		&none		&none			&none		&none			&none		&none			&none			&none			&none 	&none
-										&trans			&trans			&trans 		&trans		&trans			&trans		&trans			&trans		&trans			&trans
+	&none	&none		&kp HOME		&kp UARW		&kp END			&kp PGUP																&kp PGUP		&kp HOME		&kp UARW		&kp END			&none			&none
+	&none	&none		&hm LALT LARW	&hm LCTL DARW	&hm LSFT RARW	&kp PGDN																&kp PGDN		&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&none			&none
+	&none 	&none		&none			&none			&none			&none		&none			&none			&none		&none			&none			&none			&none			&none			&none 			&none
+										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
 		num_layer {
 			bindings = <
-	&none	&kp F7		&kp F8		&kp F9		&kp F12			&kp PGUP															&none		&kp NUM_7		&kp NUM_8			&kp NUM_9			&none	&none
-	&none	&kp F4		&hm LALT F5	&hm LCTL F6	&hm LSFT F11	&kp PGDN															&none		&hm RSFT NUM_4	&hm RCTL NUM_5		&hm RALT NUM_6		&none	&none
-	&none 	&kp F1		&kp F2		&kp F3		&kp F10			&none		&none		&none			&none		&none			&kp NUM_0	&kp NUM_1		&kp NUM_2			&kp NUM_3			&none 	&none
-									&trans		&trans			&trans 		&trans		&trans			&trans		&trans			&trans		&trans		&trans
+	&none	&none		&kp F7			&kp F8			&kp F9			&kp F12																	&none			&kp N7			&kp N8			&kp N9			&none			&none
+	&none	&none		&kp F4			&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&none			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&none			&none
+	&none	&none		&kp F1			&kp F2			&kp F3			&kp F10		&none			&none			&none		&none			&kp N0			&kp N1			&kp N2			&kp N3			&none			&none
+										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
 		sym_layer {
 			bindings = <
-	&none	&none		&kp HOME		&kp UARW		&kp END			&kp PGUP															&kp PGUP	&kp HOME		&kp UARW		&kp END			&none	&none
-	&none	&none		&hm LALT LARW	&hm LCTL DARW	&hm LSFT RARW	&kp PGDN															&kp PGDN	&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&none	&none
-	&none 	&none		&none			&none			&none			&none		&none		&none			&none		&none			&none		&none			&none			&none			&none 	&none
-										&trans			&trans			&trans 		&trans		&trans			&trans		&trans			&trans		&trans			&trans
+	&none	&none		&kp HOME		&kp UARW		&kp END			&kp PGUP																&kp PGUP		&kp HOME		&kp UARW		&kp END			&none			&none
+	&none	&none		&hm LALT LARW	&hm LCTL DARW	&hm LSFT RARW	&kp PGDN																&kp PGDN		&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&none			&none
+	&none 	&none		&none			&none			&none			&none		&none			&none			&none		&none			&none			&none			&none			&none			&none 			&none
+										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
 	};
