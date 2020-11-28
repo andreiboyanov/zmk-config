@@ -8,9 +8,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
-#define NAV 1
-#define NUM 2
-#define SYM 3
+#define NUM 1
+#define SYM 2
+#define NAV 3
 
 / {
     behaviors {
@@ -32,30 +32,30 @@
 	&none	&kp Q		&kp W			&kp E			&kp R			&kp T																	&kp Y			&kp U			&kp I			&kp O			&kp P    		&none
 	&none	&hm LGUI A	&hm LALT S		&hm LCTL D		&hm LSFT F		&kp G																	&kp H			&hm RSFT J		&hm RCTL K		&hm RALT L		&hm RGUI SCLN	&none
 	&none 	&kp Z		&kp X			&kp C			&kp V			&kp B		&none			&none			&none		&none			&kp N			&kp M			&kp CMMA		&kp DOT			&kp FSLH 		&none
-										&kp LALT		&kp LSFT		&lt NAV ESC &lt NUM RET 	&lt SYM RET		&lt SYM SPC	&lt NUM SPC		&lt NAV BKSP	&kp DEL			&kp TAB
-			>;
-		};
-		nav_layer {
-			bindings = <
-	&none	&none		&kp AMPS		&kp STAR		&none			&none																	&kp PGUP		&kp HOME		&kp UARW		&kp END			&kp PRSC		&none
-	&none	&none		&hm LALT DLLR	&hm LCTL PRCNT	&hm LSFT CARET	&none																	&kp PGDN		&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&kp INS			&none
-	&none 	&none		&kp EXCL		&kp AT			&kp HASH		&none		&none			&none			&none		&none			&kp QMARK		&kp LT			&kp GT			&kp COLN		&kp DEL 		&none
-										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
+										&kp LALT		&kp LSFT		&lt NUM ESC &lt NAV RET 	&lt SYM TAB		&lt SYM SPC	&lt NAV SPC		&lt NUM BKSP	&kp DEL			&kp TAB
 			>;
 		};
 		num_layer {
 			bindings = <
 	&none	&none		&kp F7			&kp F8			&kp F9			&kp F10																	&kp N0			&kp N7			&kp N8			&kp N9			&kp PRSC		&none
-	&none	&none		&kp F4			&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&none			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&kp INS			&none
-	&none	&none		&kp F1			&kp F2			&kp F3			&kp F12		&none			&none			&none		&none			&kp N0			&kp N1			&kp N2			&kp N3			&kp DEL			&none
+	&none	&none		&kp F4			&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&kp N0			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&kp INS			&none
+	&none	&none		&kp F1			&kp F2			&kp F3			&kp F12		&trans			&trans			&trans		&trans			&kp N0			&kp N1			&kp N2			&kp N3			&kp DEL			&none
 										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
 		sym_layer {
 			bindings = <
-	&none	&none		&kp AMPS		&kp STAR		&none			&none																	&kp DQT			&kp LPAR		&kp RPAR		&kp EQUAL		&kp STAR		&none
-	&none	&none		&hm LALT DLLR	&hm LCTL PRCNT	&hm LSFT CARET	&none																	&kp SQT 		&hm RSFT LBKT	&hm RCTL RBKT	&hm RALT MINUS	&kp PLUS		&none
-	&none 	&none		&kp EXCL		&kp AT			&kp HASH		&none		&none			&none			&none		&none			&kp GRAVE		&kp	LBRC		&kp RBRC		&kp UNDER		&kp BSLH		&none
+	&none	&none		&kp AMPS		&kp STAR		&kp PIPE		&none																	&kp DQT			&kp LPAR		&kp RPAR		&kp EQUAL		&kp STAR		&none
+	&none	&kp COLN	&hm LALT DLLR	&hm LCTL PRCNT	&hm LSFT CARET	&none																	&kp SQT 		&hm RSFT LBKT	&hm RCTL RBKT	&hm RALT MINUS	&kp PLUS		&none
+	&none 	&none		&kp EXCL		&kp AT			&kp HASH		&none		&trans			&trans			&trans		&trans			&kp GRAVE		&kp	LBRC		&kp RBRC		&kp UNDER		&kp BSLH		&none
+										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
+			>;
+		};
+		nav_layer {
+			bindings = <
+	 &none	&none		&trans			&trans			&trans			&trans																	&kp PGUP		&kp HOME		&kp UARW		&kp END			&kp PRSC		&none
+	 &none	&none		&trans			&trans			&trans			&trans																	&kp PGDN		&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&kp INS			&none
+	 &none 	&none		&trans			&trans			&trans			&trans		&trans			&trans			&trans		&trans			&kp QMARK		&kp LT			&kp GT			&kp COLN		&kp DEL 		&none
 										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
