@@ -38,24 +38,24 @@
 		num_layer {
 			bindings = <
 	&none	&none		&kp F7			&kp F8			&kp F9			&kp F10																	&kp N0			&kp N7			&kp N8			&kp N9			&kp PRSC		&none
-	&none	&none		&kp F4			&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&kp N0			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&kp INS			&none
-	&none	&none		&kp F1			&kp F2			&kp F3			&kp F12		&trans			&trans			&trans		&trans			&kp N0			&kp N1			&kp N2			&kp N3			&kp DEL			&none
+	&none	&kp LGUI	&kp F4			&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&kp N0			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&hm RGUI INS	&none
+	&none	&none		&kp F1			&kp F2			&kp F3			&kp F12		&none			&none			&none		&none			&kp N0			&kp N1			&kp N2			&kp N3			&kp DEL			&none
 										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
 		sym_layer {
 			bindings = <
 	&none	&none		&kp AMPS		&kp STAR		&kp PIPE		&none																	&kp DQT			&kp LPAR		&kp RPAR		&kp EQUAL		&kp STAR		&none
-	&none	&kp COLN	&hm LALT DLLR	&hm LCTL PRCNT	&hm LSFT CARET	&none																	&kp SQT 		&hm RSFT LBKT	&hm RCTL RBKT	&hm RALT MINUS	&kp PLUS		&none
-	&none 	&none		&kp EXCL		&kp AT			&kp HASH		&none		&trans			&trans			&trans		&trans			&kp GRAVE		&kp	LBRC		&kp RBRC		&kp UNDER		&kp BSLH		&none
+	&none	&hm LGUI COLN &hm LALT DLLR	&hm LCTL PRCNT	&hm LSFT CARET	&none																	&kp SQT 		&hm RSFT LBKT	&hm RCTL RBKT	&hm RALT MINUS	&hm RGUI PLUS	&none
+	&none 	&none		&kp EXCL		&kp AT			&kp HASH		&none		&none			&none			&none		&none			&kp GRAVE		&kp	LBRC		&kp RBRC		&kp UNDER		&kp BSLH		&none
 										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
 		nav_layer {
 			bindings = <
-	 &none	&none		&trans			&trans			&trans			&trans																	&kp PGUP		&kp HOME		&kp UARW		&kp END			&kp PRSC		&none
-	 &none	&none		&trans			&trans			&trans			&trans																	&kp PGDN		&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&kp INS			&none
-	 &none 	&none		&trans			&trans			&trans			&trans		&trans			&trans			&trans		&trans			&kp QMARK		&kp LT			&kp GT			&kp COLN		&kp DEL 		&none
+	 &none	&trans		&trans			&trans			&trans			&trans																	&kp PGUP		&kp HOME		&kp UARW		&kp END			&kp PRSC		&none
+	 &none	&trans		&trans			&trans			&trans			&trans																	&kp PGDN		&hm RSFT LARW	&hm RCTL DARW	&hm RALT RARW	&kp INS			&none
+	 &none 	&trans		&trans			&trans			&trans			&trans		&none			&none			&none		&none			&kp QMARK		&kp LT			&kp GT			&kp COLN		&kp DEL 		&none
 										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
 		};
