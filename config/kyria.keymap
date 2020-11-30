@@ -38,7 +38,7 @@
 		num_layer {
 			bindings = <
 	&none	&none		&kp F7			&kp F8			&kp F9			&kp F10																	&kp N0			&kp N7			&kp N8			&kp N9			&kp PRSC		&none
-	&none	&kp LGUI	&kp F4			&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&kp N0			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&hm RGUI INS	&none
+	&none	&kp LGUI	&hm LALT F4		&hm LALT F5		&hm LCTL F6		&hm LSFT F11															&kp N0			&hm RSFT N4		&hm RCTL N5		&hm RALT N6		&hm RGUI INS	&none
 	&none	&none		&kp F1			&kp F2			&kp F3			&kp F12		&none			&none			&none		&none			&kp N0			&kp N1			&kp N2			&kp N3			&kp DEL			&none
 										&trans			&trans			&trans 		&trans			&trans			&trans		&trans			&trans			&trans			&trans
 			>;
