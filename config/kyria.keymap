@@ -32,7 +32,7 @@
 	&none	&kp Q		&kp W			&kp E			&kp R			&kp T																	&kp Y			&kp U			&kp I			&kp O			&kp P    		&none
 	&none	&hm LGUI A	&hm LALT S		&hm LCTL D		&hm LSFT F		&kp G																	&kp H			&hm RSFT J		&hm RCTL K		&hm RALT L		&hm RGUI SCLN	&none
 	&none 	&kp Z		&kp X			&kp C			&kp V			&kp B		&none			&none			&none		&none			&kp N			&kp M			&kp CMMA		&kp DOT			&kp FSLH 		&none
-										&kp LALT		&kp LSFT		&lt NUM ESC &lt NAV RET 	&lt SYM TAB		&lt SYM SPC	&lt NAV SPC		&lt NUM BKSP	&kp DEL			&kp TAB
+										&kp LALT		&kp LSFT		&lt NUM ESC &lt SYM TAB 	&lt NAV RET		&lt NAV SPC	&lt SYM SPC		&lt NUM BKSP	&kp DEL			&kp RET
 			>;
 		};
 		num_layer {
